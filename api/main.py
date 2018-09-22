@@ -1,5 +1,4 @@
 import os
-import json
 from bottle import request, route, run
 
 @route('/api', method='POST')
