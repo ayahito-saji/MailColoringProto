@@ -1,0 +1,20 @@
+{
+    "name": "Example Hello",
+    "version": "0.0.3",
+    "manifest_version": 2,
+    "description": "This is hello",
+    "icons": {
+        "16": "icons/icon16.png",
+        "48": "icons/icon48.png",
+        "128": "icons/icon128.png"
+    },
+    "background": {
+        "scripts": ["background.js"],
+        "persistent": false
+    },
+    "permissions": ["tabs"],
+    "content_scripts": [{
+        "matches": ["https://outlook.live.com/owa/"],
+        "js": ["main.js"]
+    }]
+}
